@@ -3,6 +3,11 @@
 Zotero LibreOffice Integration comprises extensions for LibreOffice/OpenOffice.org/NeoOffice and Zotero that communicate using local web servers. This fork supports the Tabbed UI from LibreOffice.
 Credit to Julakali (https://github.com/julakali)
 
+<p align="center">
+<img src="https://github.com/Rosmaninho/zotero-libreoffice-integration/blob/master/TabbedUI_support.png"  width="800" height="220" />
+</p>
+
+
 ## Build Requirements
 
 - [Eclipse](https://www.eclipse.org/downloads/?)
