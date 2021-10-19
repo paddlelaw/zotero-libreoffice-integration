@@ -35,3 +35,7 @@ instructions to enable debugging in LibreOffice. Attempt performing a Zotero act
 process until a debugging client connects. Create a remote debugging configuration in Eclipse and run it. LibreOffice will
 unfreeze. If you add breakpoints in Eclipse they will be triggered freezing the LibreOffice process and allowing you to
 inspect the execution environment. This technique can be used to debug on remote or virtual machines too.
+
+https://github.com/paddlelaw/zotero-libreoffice-integration/blob/49c9bed70635f9dd75ae7ed263b02d85a139a94b/chrome/install.js#L178
+
+checkjre 需要完善
