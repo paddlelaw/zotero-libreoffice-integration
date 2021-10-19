@@ -37,6 +37,7 @@ public class Bookmark extends ReferenceMark {
 		isDisposable = true;
 	}
 	
+	@Override
 	public void delete() throws Exception {
 		doc.properties.setProperty(rawCode, "");
 		XTextCursor dupRange = text.createTextCursorByRange(range);
@@ -50,15 +51,18 @@ public class Bookmark extends ReferenceMark {
 		range.setString("");
 	}
 	
+	@Override
 	public XTextRange removeCode() throws Exception {
 		doc.properties.setProperty(rawCode, "");
 		return super.removeCode();
 	}
 	
+	@Override
 	public void setCode(String code) throws Exception {
 		doc.properties.setProperty(rawCode, Document.PREFIXES[0]+code);
 	}
 	
+	@Override
 	public String getCode() throws Exception {
 		String property = doc.properties.getProperty(rawCode);
 		
@@ -84,8 +88,10 @@ public class Bookmark extends ReferenceMark {
 		throw new Exception("Invalid code prefix");
 	}
 
+	@Override
 	protected void prepareMultiline() throws Exception {}
 	
+	@Override
 	protected void reattachMark() throws Exception {
 		// Re-create bookmark
 		super.removeCode();

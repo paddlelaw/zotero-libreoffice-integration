@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://C:/Program Files/LibreOffice/program/classes/commonwizards.jar!/" />
+      <root url="jar://C:/Program Files/LibreOffice/program/classes/form.jar!/" />
+      <root url="jar://C:/Program Files/LibreOffice/program/classes/query.jar!/" />
+      <root url="jar://C:/Program Files/LibreOffice/program/classes/report.jar!/" />
+      <root url="jar://C:/Program Files/LibreOffice/program/classes/ScriptFramework.jar!/" />
+      <root url="jar://C:/Program Files/LibreOffice/program/classes/ScriptProviderForJava.jar!/" />
+      <root url="jar://C:/Program Files/LibreOffice/program/classes/table.jar!/" />
+      <root url="jar://C:/Program Files/LibreOffice/program/classes/xmerge.jar!/" />
+      <root url="jar://C:/Program Files/LibreOffice/program/classes/XMergeBridge.jar!/" />
+      <root url="jar://C:/Program Files/LibreOffice/program/classes/java_uno.jar!/" />
+      <root url="jar://C:/Program Files/LibreOffice/program/classes/unoloader.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-annotations-2.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-core-2.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-databind-2.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jna.jar!/" />
+      <root url="file://C:/Program Files/LibreOffice/program/classes" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://C:/Program Files/LibreOffice/program/classes" recursive="false" />
+  </library>
+</component>

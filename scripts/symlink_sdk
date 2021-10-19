@@ -6,21 +6,28 @@ SYMLINK_LOCATION="$CWD/../build/lib/libreoffice-sdk"
 if [[ -e $SYMLINK_LOCATION ]]; then
 	if [[ -L $SYMLINK_LOCATION ]]; then
 		rm $SYMLINK_LOCATION
+		echo "We have removed somethiing"
 	else
 		echo "$SYMLINK_LOCATION already exists and is not a symlink."
 		exit 1
 	fi
 fi
 
+echo "Let's go"
+
 SDK_LOCATION=""
 if [[ "`uname`" = "Darwin" ]]; then
 	SDK_LOCATION="/Applications/LibreOffice.app/Contents/Resources/java"
-elif [[ "`uname -a | cut -d ' ' -f3 | grep Microsoft`" ]]; then
+	echo "You are using Apple"
+elif [[ "`uname -a | cut -d ' ' -f3 | grep WSL2`" ]]; then
 	SDK_LOCATION="/mnt/c/Program Files/LibreOffice/program/classes"
 	WINDOWS=1
+	echo "You are using WSL"
 elif [[ "`uname`" = "Linux" ]]; then
 	SDK_LOCATION="$(echo /opt/libreoffice*/program/classes)"
 fi
+
+echo "Let's go 1"
 
 SEARCH=""
 if [[ ! -e "$SDK_LOCATION/java_uno.jar" ]]; then

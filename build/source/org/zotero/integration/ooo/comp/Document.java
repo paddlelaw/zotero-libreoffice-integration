@@ -234,7 +234,9 @@ public class Document {
 	}
 	
 	public int displayAlert(String text, int icon, int buttons) throws Exception {
-		if (Platform.isMac()) return displayAlertMacOS(text, icon, buttons);
+		if (Platform.isMac()) {
+			return displayAlertMacOS(text, icon, buttons);
+		}
 		// figure out appropriate buttons
 		int ooButtons = MessageBoxButtons.BUTTONS_OK;
 		if(buttons == 1) {
@@ -306,11 +308,17 @@ public class Document {
 		}
 
 		if (output.contains("Yes")) {
-			if (buttons == 3) return 2;
-			else return 1;
+			if (buttons == 3) {
+				return 2;
+			} else {
+				return 1;
+			}
 		} else if (output.contains("No")) {
-			if (buttons == 3) return 1;
-			else return 0;
+			if (buttons == 3) {
+				return 1;
+			} else {
+				return 0;
+			}
 		} else if (output.contains("OK") && buttons == 1) {
 			return 1;
 		} else {
@@ -437,7 +445,9 @@ public class Document {
 		String data;
 		for(String prefsProperty : PREFS_PROPERTIES) {
 			data = properties.getProperty(prefsProperty);
-			if(data != "") return data;
+			if(data != "") {
+				return data;
+			}
 		}
 		return "";
 	}
@@ -466,7 +476,9 @@ public class Document {
 			int count = markIndexAccess.getCount();
 			for(int i = 0; i<count; i++) {
 				ReferenceMark mark = mMarkManager.getMark(markIndexAccess.getByIndex(i), fieldType);
-				if(mark != null) marks.add(mark);
+				if(mark != null) {
+					marks.add(mark);
+				}
 			}
 			
 			XTextSectionsSupplier textSectionSupplier = (XTextSectionsSupplier) 
@@ -476,7 +488,9 @@ public class Document {
 			count = markIndexAccess.getCount();
 			for(int i = 0; i<count; i++) {
 				ReferenceMark mark = mMarkManager.getMark(markIndexAccess.getByIndex(i), fieldType);
-				if(mark != null) marks.add(mark);
+				if(mark != null) {
+					marks.add(mark);
+				}
 			}
 		} else if(fieldType.equals("Bookmark")) {
 			// remove save event listener if necessary
@@ -494,7 +508,9 @@ public class Document {
 				for(String prefix : Document.PREFIXES) {
 					if(name.contains(prefix)) {
 						ReferenceMark mark = mMarkManager.getMark(markNameAccess.getByName(name), fieldType);
-						if(mark != null) marks.add(mark);
+						if(mark != null) {
+							marks.add(mark);
+						}
 						break;
 					}
 				}
@@ -775,9 +791,13 @@ public class Document {
 	private static final String randomCharacterSet = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	private static Random rand = null;
 	static String getRandomString(int len) {
-		if(rand == null) rand = new Random();
+		if(rand == null) {
+			rand = new Random();
+		}
 		StringBuilder sb = new StringBuilder(len);
-		for(int i = 0; i < len; i++) sb.append(randomCharacterSet.charAt(rand.nextInt(randomCharacterSet.length())));
+		for(int i = 0; i < len; i++) {
+			sb.append(randomCharacterSet.charAt(rand.nextInt(randomCharacterSet.length())));
+		}
 		return sb.toString();
 	}
 	

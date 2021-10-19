@@ -306,7 +306,9 @@ public class ReferenceMark implements Comparable<ReferenceMark> {
 	
 	public String getCode() throws Exception {
 		int rnd = rawCode.lastIndexOf(" RND");
-		if(rnd == -1) rnd = rawCode.length()-6;	// for compatibility with old, pre-release Python plug-in
+		if(rnd == -1) {
+			rnd = rawCode.length()-6;	// for compatibility with old, pre-release Python plug-in
+		}
 		for(String prefix : Document.PREFIXES) {
 			int index = rawCode.indexOf(prefix);
 			if(index != -1) {
@@ -346,11 +348,13 @@ public class ReferenceMark implements Comparable<ReferenceMark> {
 		return 0;
 	}
 	
+	@Override
 	public boolean equals(Object o) {
 		// impossible to have two ReferenceMarks/Bookmarks with the same name
 		return ((ReferenceMark) o).rawCode.equals(rawCode);
 	}
 	
+	@Override
 	public int hashCode() {
 		return rawCode.hashCode();
 	}
@@ -358,7 +362,9 @@ public class ReferenceMark implements Comparable<ReferenceMark> {
 	XTextRange getDocumentRange() {
 		if(table != null) {
 			String tableName = ((XNamed) UnoRuntime.queryInterface(XNamed.class, table)).getName();
-			if(doc.textTableManager == null) doc.textTableManager = new TextTableManager(doc.textDocument);
+			if(doc.textTableManager == null) {
+				doc.textTableManager = new TextTableManager(doc.textDocument);
+			}
 			return doc.textTableManager.getRangeForTable(tableName);
 		} else if(isNote) {
 			return ((XTextContent) UnoRuntime.queryInterface(XTextContent.class, text)).getAnchor();
@@ -367,6 +373,7 @@ public class ReferenceMark implements Comparable<ReferenceMark> {
 		}
 	}
 	
+	@Override
 	public int compareTo(ReferenceMark o) {
 		XTextRange range1, range2;
 		range1 = getDocumentRange();
@@ -427,7 +434,7 @@ public class ReferenceMark implements Comparable<ReferenceMark> {
 					}
 					Integer int1 = Integer.parseInt(m1.group(2));
 					Integer int2 = Integer.parseInt(m2.group(2));
-					if(int1 == int2) {
+					if(int1.equals(int2)) {
 						// compare column numbers
 						return m1.group(1).compareTo(m2.group(1));
 					} else {
@@ -490,7 +497,9 @@ public class ReferenceMark implements Comparable<ReferenceMark> {
 	}
 	
 	protected void reattachMark() throws Exception {
-		if(isTextSection) return;
+		if(isTextSection) {
+			return;
+		}
 	
 		named = (XNamed) UnoRuntime.queryInterface(XNamed.class,
 				doc.docFactory.createInstance("com.sun.star.text.ReferenceMark"));

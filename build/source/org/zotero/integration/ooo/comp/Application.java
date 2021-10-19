@@ -45,7 +45,9 @@ public class Application {
 
 	public Application(XComponentContext aCtx) throws Exception {
 		ctx = aCtx;
-		if(desktop == null) init();
+		if(desktop == null) {
+			init();
+		}
 	}
 	
 	public Document getActiveDocument() throws Exception {
@@ -53,7 +55,9 @@ public class Application {
 	}
 
 	public int getActiveDocumentID() throws Exception {
-		if(lastDocumentID == Integer.MAX_VALUE) lastDocumentID = 0;
+		if(lastDocumentID == Integer.MAX_VALUE) {
+			lastDocumentID = 0;
+		}
 		Integer documentID = ++lastDocumentID;
 		Document document;
 		try {
@@ -93,6 +97,8 @@ public class Application {
 		ooVersion = (String) settings.getByName("ooSetupVersion");
 		
 		// create event listener if necessary
-		if(saveEventListener == null) saveEventListener = new SaveEventListener();
+		if(saveEventListener == null) {
+			saveEventListener = new SaveEventListener();
+		}
 	}
 }

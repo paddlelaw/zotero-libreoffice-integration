@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/lib/jackson-core-2.0.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jackson-databind-2.0.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jna.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jackson-annotations-2.0.2.jar!/" />
+    <libelement value="jar://C:/Program Files/LibreOffice/program/classes/commonwizards.jar!/" />
+    <libelement value="jar://C:/Program Files/LibreOffice/program/classes/form.jar!/" />
+    <libelement value="jar://C:/Program Files/LibreOffice/program/classes/query.jar!/" />
+    <libelement value="jar://C:/Program Files/LibreOffice/program/classes/report.jar!/" />
+    <libelement value="jar://C:/Program Files/LibreOffice/program/classes/ScriptFramework.jar!/" />
+    <libelement value="jar://C:/Program Files/LibreOffice/program/classes/ScriptProviderForJava.jar!/" />
+    <libelement value="jar://C:/Program Files/LibreOffice/program/classes/table.jar!/" />
+    <libelement value="jar://C:/Program Files/LibreOffice/program/classes/unoil.jar!/" />
+    <libelement value="jar://C:/Program Files/LibreOffice/program/classes/xmerge.jar!/" />
+    <libelement value="jar://C:/Program Files/LibreOffice/program/classes/XMergeBridge.jar!/" />
+    <libelement value="jar://C:/Program Files/LibreOffice/program/classes/java_uno.jar!/" />
+    <libelement value="jar://C:/Program Files/LibreOffice/program/classes/juh.jar!/" />
+    <libelement value="jar://C:/Program Files/LibreOffice/program/classes/jurt.jar!/" />
+    <libelement value="jar://C:/Program Files/LibreOffice/program/classes/ridl.jar!/" />
+    <libelement value="jar://C:/Program Files/LibreOffice/program/classes/unoloader.jar!/" />
+    <libelement value="file://C:/Program Files/LibreOffice/program/classes" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/source" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/source" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module-library">
+      <library name="jackson-core-2.0.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jackson-core-2.0.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jackson-databind-2.0.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jackson-databind-2.0.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jna.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jna.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jackson-annotations-2.0.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jackson-annotations-2.0.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commonwizards.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/LibreOffice/program/classes/commonwizards.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="form.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/LibreOffice/program/classes/form.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="query.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/LibreOffice/program/classes/query.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="report.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/LibreOffice/program/classes/report.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ScriptFramework.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/LibreOffice/program/classes/ScriptFramework.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ScriptProviderForJava.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/LibreOffice/program/classes/ScriptProviderForJava.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="table.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/LibreOffice/program/classes/table.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="unoil.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/LibreOffice/program/classes/unoil.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="xmerge.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/LibreOffice/program/classes/xmerge.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="XMergeBridge.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/LibreOffice/program/classes/XMergeBridge.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="java_uno.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/LibreOffice/program/classes/java_uno.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="juh.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/LibreOffice/program/classes/juh.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jurt.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/LibreOffice/program/classes/jurt.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ridl.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/LibreOffice/program/classes/ridl.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="unoloader.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files/LibreOffice/program/classes/unoloader.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="classes">
+        <CLASSES>
+          <root url="file://C:/Program Files/LibreOffice/program/classes" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="lib" level="project" />
+  </component>
+</module>
