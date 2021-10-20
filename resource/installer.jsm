@@ -34,6 +34,7 @@ const UNOPKG_LOCATIONS = {
 		"/Applications/LibreOffice.app/Contents/MacOS/unopkg",
 	],
 	Win:[
+		"C:\\Program Files\\LibreOffice\\program\\unopkg.exe",
 		"C:\\Program Files\\LibreOffice 6\\program\\unopkg.exe",
 		"C:\\Program Files (x86)\\LibreOffice 6\\program\\unopkg.exe",
 		"C:\\Program Files\\LibreOffice 5\\program\\unopkg.exe",

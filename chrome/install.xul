@@ -60,7 +60,7 @@
 	next="openoffice-installations">
 		<description>
 			The Zotero LibreOffice Plugin requires the Java
-			Runtime Environment. Visit <label class="zotero-text-link" href="https://java.com/inc/BrowserRedirect1.jsp">Java.com</label>
+			Runtime Environment. Please Visit <label class="zotero-text-link" href="https://java.com/inc/BrowserRedirect1.jsp">Java.com</label>
 			to download it.
 		</description>
 	</wizardpage>
